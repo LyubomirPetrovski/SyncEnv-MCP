@@ -1,6 +1,6 @@
-﻿using SyncEnvMcp.Services;
+﻿using System.Reflection;
+using SyncEnvMcp.Services;
 using SyncEnvMcp.Tools;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
