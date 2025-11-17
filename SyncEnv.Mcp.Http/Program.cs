@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using SyncEnvMcp.Prompts;
 using SyncEnvMcp.Services;
 using SyncEnvMcp.Tools;
 
@@ -25,8 +26,9 @@ builder.Services
     .AddMcpServer()
     .WithHttpTransport()
     .WithTools<EnvironmentTools>()
-    .WithTools<GameSyncTools>();
-    // .WithToolsFromAssembly(Assembly.LoadFrom(Path.Combine(appDirectory, "SyncEnv.Mcp.dll")));
+    .WithTools<GameSyncTools>()
+    .WithPrompts<EnvironmentPrompts>();
+// .WithToolsFromAssembly(Assembly.LoadFrom(Path.Combine(appDirectory, "SyncEnv.Mcp.dll")));
 
 var app = builder.Build();
 

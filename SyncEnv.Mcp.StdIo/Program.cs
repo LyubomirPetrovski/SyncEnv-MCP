@@ -21,10 +21,12 @@ builder.Services.AddSingleton<ISampleDataGenerator, SampleDataGenerator>();
 builder.Services.AddSingleton<IDataInitializationHelperService, DataInitializationHelperService>();
 
 // Add MCP Server
+var mcpCapabilitiesAssembly = Assembly.LoadFrom(Path.Combine(appDirectory, "SyncEnv.Mcp.dll"));
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()
-    .WithToolsFromAssembly(Assembly.LoadFrom(Path.Combine(appDirectory, "SyncEnv.Mcp.dll")));
+    .WithToolsFromAssembly(mcpCapabilitiesAssembly)
+    .WithPromptsFromAssembly(mcpCapabilitiesAssembly);
 
 var app = builder.Build();
 
