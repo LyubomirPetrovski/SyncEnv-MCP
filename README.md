@@ -33,20 +33,21 @@ This demo application demonstrates:
 
 ```
 SyncEnvMcp/
-??? SyncEnv.Mcp/                    # Core MCP library
-?   ??? Services/                   # Data services and dependency mapping
-?   ??? Tools/                      # MCP tool implementations
-?   ??? Prompts/                    # MCP prompts (future enhancement)
-??? SyncEnv.Mcp.Http/               # HTTP transport MCP server
-?   ??? Program.cs                  # HTTP server configuration
-?   ??? Examples/                   # Example client implementations
-?   ??? Dockerfile                  # Container configuration
-??? SyncEnv.Mcp.StdIo/             # StdIO transport MCP server
-?   ??? Program.cs                  # StdIO server configuration
-?   ??? Dockerfile                  # Container configuration
-??? SyncEnv.Mcp.Tests/             # Unit tests
-??? SyncEnv.Mcp.Tests.Integration/ # Integration tests
-??? MongoDAL/                       # Data models and abstractions
+SyncEnvMcp/
+├── SyncEnv.Mcp/                    # Core MCP library
+│   ├── Services/                   # Data services and dependency mapping
+│   ├── Tools/                      # MCP tool implementations
+│   └── Prompts/                    # MCP prompts (future enhancement)
+├── SyncEnv.Mcp.Http/               # HTTP transport MCP server
+│   ├── Program.cs                  # HTTP server configuration
+│   ├── Examples/                   # Example client implementations
+│   └── Dockerfile                  # Container configuration
+├── SyncEnv.Mcp.StdIo/             # StdIO transport MCP server
+│   ├── Program.cs                  # StdIO server configuration
+│   └── Dockerfile                  # Container configuration
+├── SyncEnv.Mcp.Tests/             # Unit tests
+├── SyncEnv.Mcp.Tests.Integration/ # Integration tests
+└── MongoDAL/                       # Data models and abstractions
 ```
 
 ## 🚀 Technologies
