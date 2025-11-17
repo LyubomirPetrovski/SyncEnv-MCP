@@ -1,12 +1,12 @@
-# SyncEnv MCP - Model Context Protocol Demo for .NET
+﻿# SyncEnv MCP - Model Context Protocol Demo for .NET
 
 A comprehensive demonstration of implementing the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) in .NET 9. This sample application showcases how to build MCP servers with both HTTP and StdIO transports, featuring real-world data synchronization scenarios for game/sports data management.
 
-## ?? What is MCP?
+## 🤔 What is MCP?
 
 The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to Large Language Models (LLMs). This enables AI assistants like Claude, ChatGPT, and others to interact with your application's data and tools in a standardized way.
 
-## ?? Features
+## ✨ Features
 
 This demo application demonstrates:
 
@@ -17,7 +17,7 @@ This demo application demonstrates:
 - **Docker Support**: Containerized deployment ready
 - **Comprehensive Testing**: Unit and integration tests included
 
-## ?? MCP Tools Implemented
+## 🛠️ MCP Tools Implemented
 
 ### Environment Tools
 - `ListEnvironments` - List all available environments (Production, Local)
@@ -29,7 +29,7 @@ This demo application demonstrates:
 - `PreviewGameSync` - Preview what data would be synced (dry-run mode)
 - `SyncGame` - Sync a specific game and all its dependencies between environments
 
-## ??? Solution Structure
+## 📁 Solution Structure
 
 ```
 SyncEnvMcp/
@@ -49,7 +49,7 @@ SyncEnvMcp/
 ??? MongoDAL/                       # Data models and abstractions
 ```
 
-## ??? Technologies
+## 🚀 Technologies
 
 - **.NET 9** - Latest .NET framework with C# 13
 - **ASP.NET Core** - For HTTP transport server
@@ -57,7 +57,7 @@ SyncEnvMcp/
 - **xUnit** - Testing framework
 - **Docker** - Containerization support
 
-## ?? Installation & Setup
+## 📦 Installation & Setup
 
 ### Prerequisites
 
@@ -98,7 +98,7 @@ docker build -f SyncEnv.Mcp.Http/Dockerfile -t syncenv-mcp-http .
 docker run -p 5000:5000 syncenv-mcp-http
 ```
 
-## ?? Running Tests
+## 🧪 Running Tests
 
 ```bash
 # Run unit tests
@@ -111,7 +111,7 @@ dotnet test SyncEnv.Mcp.Tests.Integration/SyncEnv.Mcp.Tests.Integration.csproj
 dotnet test
 ```
 
-## ?? Usage Examples
+## 💡 Usage Examples
 
 ### Example 1: List Available Environments
 
@@ -172,7 +172,7 @@ dotnet test
 }
 ```
 
-## ?? Connecting MCP Clients
+## 🔌 Connecting MCP Clients
 
 ### Claude Desktop
 
@@ -201,7 +201,7 @@ Add to your Claude Desktop configuration file:
 }
 ```
 
-## ?? Key Concepts Demonstrated
+## 🎓 Key Concepts Demonstrated
 
 ### 1. MCP Tool Registration
 Tools are registered using attributes and dependency injection:
@@ -240,24 +240,24 @@ builder.Services.AddMcpServer()
     .WithTools<EnvironmentTools>();
 ```
 
-## ?? Learn More
+## 📚 Learn More
 
 - [Model Context Protocol Specification](https://spec.modelcontextprotocol.io/)
 - [MCP Documentation](https://modelcontextprotocol.io/)
 - [.NET MCP SDK](https://github.com/modelcontextprotocol/dotnet-sdk)
 
-## ?? Contributing
+## 🤝 Contributing
 
 This is a demonstration project, but feel free to:
 - Report issues or suggest improvements
 - Fork and enhance with your own MCP tools
 - Use as a template for your own MCP implementations
 
-## ?? License
+## 📄 License
 
 This is a sample/demonstration project. Feel free to use it for learning and building your own MCP implementations.
 
-## ?? Future Enhancements
+## 🔮 Future Enhancements
 
 - [ ] Add MCP Prompts support
 - [ ] Implement MCP Resources
@@ -267,7 +267,7 @@ This is a sample/demonstration project. Feel free to use it for learning and bui
 - [ ] Add more complex dependency scenarios
 - [ ] GraphQL integration example
 
-## ?? Contact
+## 📧 Contact
 
 Created as a demonstration of MCP in .NET - feel free to learn from and adapt this code for your own projects!
 
