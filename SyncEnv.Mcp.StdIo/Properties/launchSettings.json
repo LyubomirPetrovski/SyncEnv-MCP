@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "SyncEnvMcp.StdIo": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "dockerOption": {
+        "dockerfileRelativePath": "Dockerfile"
+      }
+    }
+  }
+}

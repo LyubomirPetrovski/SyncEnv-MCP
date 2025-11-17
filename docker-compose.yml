@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mcp-http-server:
+    build:
+      context: .
+      dockerfile: SyncEnv.Mcp.Http/Dockerfile
+    container_name: syncenv-mcp-http
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:5000
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - mcp-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+networks:
+  mcp-network:
+    driver: bridge

@@ -1,0 +1,15 @@
+{
+  "inputs": [],
+  "servers": {
+    "SyncEnvMcp": {
+      "type": "stdio",
+      "command": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "args": [
+        "run",
+        "--project",
+        "C:\\Projects\\MCP\\SyncEnv\\SyncEnv.Mcp.StdIo\\SyncEnv.Mcp.StdIo.csproj"
+      ],
+      "env": {}
+    }
+  }
+}

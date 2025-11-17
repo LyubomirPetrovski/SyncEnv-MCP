@@ -1,0 +1,38 @@
+# Exclude build outputs
+**/bin/
+**/obj/
+**/out/
+
+# Exclude IDE files
+**/.vs/
+**/.vscode/
+**/.idea/
+*.user
+*.suo
+
+# Exclude source control
+**/.git/
+**/.gitignore
+
+# Exclude test results
+**/TestResults/
+
+# Exclude packages
+**/packages/
+
+# Exclude temporary files
+**/*.tmp
+**/*.temp
+**/*.log
+
+# Exclude documentation
+**/docs/
+**/*.md
+
+# Keep only what we need for build
+!SyncEnv.Mcp.Http/**
+!SyncEnv.Mcp/**
+!MongoDAL/**
+!*.csproj
+!*.cs
+!*.json
