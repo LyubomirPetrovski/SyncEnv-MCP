@@ -6,6 +6,17 @@ A comprehensive demonstration of implementing the [Model Context Protocol (MCP)]
 
 The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to Large Language Models (LLMs). This enables AI assistants like Claude, ChatGPT, and others to interact with your application's data and tools in a standardized way.
 
+## 📚 General Resources
+- [Model Context Protocol Specification](https://spec.modelcontextprotocol.io/)
+- [MCP Documentation](https://modelcontextprotocol.io/)
+- [.NET MCP SDK](https://github.com/modelcontextprotocol/dotnet-sdk)
+- [MCP In Production: Building Secure and Agent-Ready Model Context Protocol Servers](https://www.youtube.com/watch?v=hTV5jgjvYiY)
+- [MCP Gets OAuth: Understanding the New Authorization Specification](https://www.youtube.com/watch?v=EXxIeOfJsqA)
+
+## 📚 Security Vulnerabilities
+- [MCP security best practices](https://www.youtube.com/watch?v=88No8pw706o)
+- [2025 Top 10 Risk & Mitigations for LLMs and Gen AI Apps](https://genai.owasp.org/llm-top-10/)
+
 ## ✨ Features
 
 This demo application demonstrates:
@@ -240,12 +251,6 @@ builder.Services.AddMcpServer()
     .WithStdioTransport()
     .WithTools<EnvironmentTools>();
 ```
-
-## 📚 Learn More
-
-- [Model Context Protocol Specification](https://spec.modelcontextprotocol.io/)
-- [MCP Documentation](https://modelcontextprotocol.io/)
-- [.NET MCP SDK](https://github.com/modelcontextprotocol/dotnet-sdk)
 
 ## 🤝 Contributing
 
